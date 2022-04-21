@@ -1,0 +1,302 @@
+<div class="container">
+    <section id="present">
+        <h2 class="tcv">Rubrique Information</h2>
+        <div class="souligne"></div>
+            <div class="container">
+                <div class="image">
+                    <img src="../assets/images/infos/mm.jpg" alt="profile">
+                    <h2>LIPAKUMU Christian</h2>
+                    <p>Ayant toujours eu une attirance particulière pour les nouvelles technologies et l'informatique, j'ai tout de suite su vers quel domaine me tourner. J'avais déjà abordé sommairement le développement informatique pour des projets personnels, notamment liés aux jeux vidéo. Cela m'a conforté dans l'idée de faire une formation développeur web et mobile grâce à laquelle je me suis grandement épanoui mais également acquis un grand nombre de compétences supplémentaires.</p>
+                </div>
+                <div class="text">
+                    <h3>information général</h3>
+                    <ul>
+                        <li><span>Genre:</span> Homme</li>
+                        <li><span>Addresse:</span> Gabon / Estuaire / Libreville</li>
+                        <li><span>e-mail:</span> bonheur.christian@gmail.com</li>
+                        <li><span>Phone:</span> +241 74703062</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <section id="formation">
+        <div class="container">
+            <div class="title">
+                <h2>Formations</h2>
+                <div class="souligne"></div>
+                <br>
+                <button class="btn btn-outline-danger" (click)="toggleIsNewBadge()" style="margin:auto;margin-left: 40%;">
+                    {{showBadge ? 'cacher' : 'afficher'}}
+                     les formations
+                    <span class="material-icons">
+                        {{showBadge ? 'visibility-off' : 'visibility'}}
+                    </span>
+                </button>
+
+            </div>
+            <br>
+            <ng-container *ngIf="showBadge">
+              <ul>
+                <li *ngFor="let formation of formations">
+                  <div class="rond"></div>
+                    <h2>Debut: {{formation.date_D}}</h2>
+                      <h2>Fin: {{formation.date_F}}</h2>
+                      <h3>Titre: {{formation.title}}</h3>
+                      <h4>Etablissement: {{formation.school}}</h4>
+                      <p>{{formation.descriptions}}</p>
+                </li>
+              </ul>
+            </ng-container>
+        </div>
+    </section>
+    <section id="competences">
+        <div class="container">
+            <div class="title">
+                <h2>Competénces</h2>
+                <div class="souligne"></div>
+                <br>
+                <button class="btn btn-outline-danger" (click)="toggleIsNewCompetence()" style="margin:auto;margin-left: 40%;">
+                  {{Competence ? 'cacher' : 'afficher'}}
+                   les competances
+                  <span class="material-icons">
+                      {{Competence ? 'visibility-off' : 'visibility'}}
+                  </span>
+                </button>
+                <br>
+                <ng-container *ngIf="Competence">
+                <ul class="skill">
+                    <li>
+                        <p>HTML 5</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>CSS 3</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>BOOSTRAP 5</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>PYTHON 3</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>DJANGO 4</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>POSTGRES</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>TYPESCRIPT</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>MAINTENANCE</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>ANGULAR 13</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>BUREAUTIQUE</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>PAINT</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>PHOTOSHOP</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>JAVA</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>PHP</p>
+                        <ul class="average">
+                            <li></li>
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <p>javascript</p>
+                        <ul class="average">
+                            <li></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: white;"></li>
+                        </ul>
+                    </li>
+                </ul>
+              </ng-container>
+            </div>
+        </div>
+    </section>
+    <section id="experiences">
+        <div class="container">
+            <div class="title">
+                <h2>Projets réalisés</h2>
+                <div class="souligne"></div>
+                <br><br>
+            </div>
+            <ng-container *ngFor="let formation of formations">
+              <ul>
+                  <li>
+                    <div class="rond"></div>
+                    <h2>
+                      {{formation.dateproject}}
+                    </h2>
+                    <h3>
+                      {{formation.projectname}}
+                    </h3>
+                    <h4>
+                      {{formation.lieu}}
+                    </h4>
+                    <p>
+                      {{formation.descriptionsproject}}
+                    </p>
+                    <p>
+                      {{formation.url}}
+                    </p>
+                  </li>
+              </ul>
+            </ng-container>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container" style="width:100%;">
+            <div class="title">
+                <h2>Contact</h2>
+                <div class="souligne"></div>
+            </div><br>
+            <form method="POST" class="post_form">
+                <p> a mettre un formulaire</p>
+
+                <input type="submit" value="envoyer">
+            </form>
+            <br><br>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <a href="#present"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <h2>&copy; copyright LIPAKUMU Christian &amp; KRISTAL SERVICE 2021</h2>
+    </footer>
+</div>

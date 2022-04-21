@@ -1,0 +1,327 @@
+/**{
+    padding:0;
+    margin:0;
+}*/
+
+/* rubrique menu*/
+.men{
+    width: 100%;
+}
+#entete{
+    background-color: aqua;
+    text-transform: uppercase;
+    width:100%;
+    height: 75px;
+    position:fixed;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#entete .menu{
+    color:dimgray;
+    position:flex;
+    width: 100%;
+}
+
+#entete .menu h1{
+    display: block;
+    border:2px solid black;
+    box-shadow: 2px 2px 1px dimgray;
+    text-align: center;
+    color:black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px white;
+}
+
+#entete .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+}
+
+#entete .menu ul:hover li{
+    opacity: 0.2;
+    filter:blur(1px);
+}
+
+#entete .menu ul li{
+    filter:blur(100%);
+    transition: 0.5; 
+}
+
+#entete .menu ul li:hover{
+    opacity: 1;
+    filter: blur(0);
+}
+
+#entete .menu ul li a{
+    text-decoration: none;
+    color: dimgray;
+    font-size:20px;
+    transition: 0.7;
+}
+
+#entete .menu ul li a:first-child{
+    margin:0;
+}
+
+#entete .menu ul li a:hover{
+    color:black;
+    font-size: 25px;
+    text-shadow: 4px 4px 6px white;
+    font-weight: bold;
+}
+
+.souligne{
+    background-color: aqua;
+    height: 2px;
+    width: 200px;
+    margin:0 auto;
+}
+
+/* rubrique acceuil*/
+
+#present{
+    background-color:lightcyan;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*titre cv*/
+
+#present .tcv{
+    text-align:center;
+    font-size: 30px;
+    text-transform:uppercase;
+    margin-top: 1px;
+}
+
+#present .container{
+    width: 1050px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#present .container .image{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 7px;
+    width: 550px;
+}
+
+#present .container .image img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+#present .container .image img:hover{
+    filter:grayscale(0);
+}
+
+#present .container .image h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#present .container .image p{
+    text-align: center;
+    color:#40424a;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+#present .text{
+    padding-top: 100px;
+}
+
+#present .text h3{
+    color:black;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#present .text ul{
+    list-style: none;
+    font-weight: 300;
+}
+
+#present .text ul li{
+    font-size: 24px;
+    color: #40424a;
+    margin-bottom: 15px;
+}
+
+#present .text ul li span{
+    font-size: 20px;
+    color:black;
+    display:inline-block;
+    min-width: 150px;
+    font-weight: bold;
+}
+
+/* formation et experiences*/
+
+#formation, #experiences{
+    font-family: 'Times New Roman', Times, serif;
+}
+#formation .container, #experiences .container{
+    padding-top: 20px;
+}
+
+#formation ul, #experiences ul{
+    border-left: 2px solid black;
+    margin-left: 60px;
+    list-style:none;
+}
+
+#formation .title h2, #experiences .title h2{
+    text-align:center;
+    font-weight: 600;
+    font-size: 80px;
+    color:black;
+}
+
+#formation ul li, #experiences ul li{
+    padding-left: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#formation .rond, #experiences .rond{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #40424a;
+    background-color: aqua;
+    top: 30px;
+    left: -10px;
+    position:absolute;
+}
+
+#formation li h2, #experiences li h2{
+    font-size: 60px;
+    margin-bottom: 10px;
+    color:black;
+}
+
+#formation li h3, #experiences li h3{
+    font-size: 30px;
+    color:black;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#formation li h4, #experiences li h4{
+    font-size: 16px;
+    text-transform:uppercase;
+    color:black;
+    margin-top:10px;
+    margin-bottom:45px;
+    font-weight: 600;
+}
+
+#formation li p, #experiences li p{
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/***************** competences ****************/
+
+#competences{
+    background-color: lightcyan;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#competences .container .title h2{
+    text-align:center;
+    font-weight: 600;
+    font-size: 80px;
+    color:black;
+}
+
+#competences .container .skill li{
+    font-size:24px;
+    color:black;
+    margin-bottom: 15px;
+    display:flex;
+    justify-content: center;
+}
+
+#competences .average li{
+    height: 30px;
+    width: 30px;
+    border-radius:50%;
+    border: 2px solid black;
+    margin-right: 30px;
+    background-color: aqua;
+}
+
+#competences .average{
+    display: flex;
+    justify-content: center;
+}
+
+#competences .container .skill li p{
+    margin-right: 200px;
+    min-width: 200px;
+    font-weight: bold;
+}
+
+#competences .container{
+    padding: 50px 0;
+}
+
+#competences .container .skill{
+    padding-top: 40px;
+}
+
+/***************contact************/
+
+#contact .container input[type="submit"]{
+    font-size:20px;
+    display:block;
+    color:black;
+    background-color: lightcyan;
+    padding:12px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    cursor:pointer;
+    text-align:center;
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+#contact .container input[type="submit"]:hover{
+    background-color: black;
+    border:none;
+    color:white;
+}
+
+/**********footer*********/
+
+footer{
+    background-color: #40424a;
+    padding:50px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer h2{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    transition: all 1s;
+}
+
+footer h2:hover{
+    font-size:30px;
+}

@@ -1,0 +1,71 @@
+
+.container{
+    margin-top: 100px;
+    background: transparent;
+    /*margin-right: 10px;*/
+}
+
+#typing{
+    width: 0ch;
+    float:left;
+    font-size: 32px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(75) 1s infinite alternate;
+}
+
+#typing span{
+    color: red;
+}
+
+#crow{
+    float: left;
+    color: white;
+    font-size: 30px;
+    animation: crow 0.5s linear 0s infinite;
+    font-weight: bold;
+}
+
+@keyframes typing{
+    from {
+        width: 0ch;
+    }
+    to{
+        width: 53ch;
+    }
+}
+
+@keyframes crow{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bouton{
+    margin: 0 auto;
+    margin-left: 30%;
+    margin-bottom: 25px;
+}
+
+.btn{
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.reseau{
+    margin-top:5%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.reseau a{
+    font-size: 40px;
+    text-decoration: none;
+    color: aqua;
+    margin-left: 10px;
+
+}
